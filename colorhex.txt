@@ -1,0 +1,3 @@
+light blue: 0f9affff
+center orange: ffb700ff
+dark blue: 2d4578ff
