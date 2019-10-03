@@ -506,7 +506,7 @@ Main
   top: -10em;
   background: #fff;
   z-index: 2;
-  width: 100%;
+  width: 40%;
   padding: 2em;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -531,8 +531,7 @@ Main
   
 .main .programming h3{
   font-size: 300%;
-  padding-bottom: 2em;
-  margin-left: 42%;
+  margin-left: 10%;
 }
   @media (max-width: 70em) {
 	.main .programming h3 {
@@ -542,8 +541,6 @@ Main
   }
   
 .main .programming .flex-box {
-  display: flex;
-  justify-content: center;
 }
   @media (max-width: 70em) {
     .main .programming .flex-box {
@@ -555,14 +552,9 @@ Main
   }
 
 .main .programming .flex-container {
-  padding: 0 7em;
   text-align: center;
+  padding-bottom: 2em;
 }
-  @media (max-width: 53em) {
-    .main .programming .flex-container {
-	  padding: 0;
-    }
-  }
 
 .main .programming a img {
   -webkit-transition: all 0.2s ease-out;
@@ -581,12 +573,65 @@ Main
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+.collapsible {
+  display: inline-block;
+  background-color: white;
+  color: black;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 20px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin-top: 1em;
+}
+
+.collapsible span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.collapsible span:after {
+  content: '\002B';
+  font-weight: bold;
+  position: absolute;
+  opacity: 0;
+  margin-left: 5px;
+  transition: 0.5s;
+}
+
+.collapsible:hover span {
+  padding-right: 10px;
+}
+
+.collapsible:hover span:after {
+  opacity: 1;
+}
+
+.active span {
+  padding-right: 10px;
+}
+
+.active span:after {
+  content: "\2212";
+  opacity: 1;
+}
+
+.accordion-content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+}
+
 .main .other {
   position: relative;
-  top: -5em;
+  top: 5em;
   float: right;
   width: 40%;
-  margin-right: 10%;
 }
   @media (max-width: 70em) {
     .main .other {
@@ -620,7 +665,7 @@ Main
   background: rgba(15, 154, 255, 0.8) url(img/icon-characters.svg) no-repeat left top;
   background-size: 100%;
   z-index: 2;
-  margin-top: 30em;
+  margin-top: 33em;
   margin-left: 20%;
   width: 20%;
   padding: 22em 1em 5em 1em;

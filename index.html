@@ -98,25 +98,37 @@
 			<h3>Programming</h3>
 			<div class="flex-box">
 				<div class="flex-container">
-					<a href="https://netquarry.com" target="_blank"><img src="img/netquarry.png" alt="Netquarry"></a>
-					<h4>2013-2014</h4>
-					<p>A software engineering firm with a web platform for enterprise architecture.</p>
-					<h4><b>Accomplishments:</b></h4>
-					<p>Launched a project to expand platform functionality to reach more clients.</p>
+					<a href="https://netquarry.com" target="_blank"><img src="img/netquarry.png" alt="Netquarry"></a><br>
+					<button type="button" class="collapsible"><span>Read More</span></button>
+					<div class="accordion-content">
+						<hr>
+						<h4>2013-2014</h4>
+						<p>A software engineering firm with a web platform for enterprise architecture.</p>
+						<h4><b>Accomplishments:</b></h4>
+						<p>Launched a project to expand platform functionality to reach more clients.</p>
+					</div>
 				</div>
 				<div class="flex-container">
-					<a href="https://www.insteon.com/" target="_blank"><img src="img/insteon.png" alt="Insteon"></a>
-					<h4>2015</h4>
-					<p>A home automation company that develops smart home appliances and the electronic language to communicate with them.</p>
-					<h4><b>Accomplishments:</b></h4>
-					<p>Performed Apple certification testing, wrote automated test scripts for home automation sensors.</p>
+					<a href="https://www.insteon.com/" target="_blank"><img src="img/insteon.png" alt="Insteon"></a><br>
+					<button type="button" class="collapsible"><span>Read More</span></button>
+					<div class="accordion-content">
+						<hr>
+						<h4>2015</h4>
+						<p>A home automation company that develops smart home appliances and the electronic language to communicate with them.</p>
+						<h4><b>Accomplishments:</b></h4>
+						<p>Performed Apple certification testing, wrote automated test scripts for home automation sensors.</p>
+					</div>
 				</div>
 				<div class="flex-container">
-					<a href="https://nextace.com/" target="_blank"><img src="img/nextace.png" alt="Nextace"></a>
-					<h4>2018-2019</h4>
-					<p>A title automation company web platform that introduces innovative technology as solutions to traditional title processing.</p>
-					<h4><b>Accomplishments:</b></h4>
-					<p>Maintained system security and OWASP requirements in all environments.</p>
+					<a href="https://nextace.com/" target="_blank"><img src="img/nextace.png" alt="Nextace"></a><br>
+					<button type="button" class="collapsible"><span>Read More</span></button>
+					<div class="accordion-content">
+						<hr>
+						<h4>2018-2019</h4>
+						<p>A title automation company web platform that introduces innovative technology as solutions to traditional title processing.</p>
+						<h4><b>Accomplishments:</b></h4>
+						<p>Maintained system security and OWASP requirements in all environments.</p>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -163,6 +175,23 @@
 	</aside>
 
 </div>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+</script>
 
 </body>
 </html>
