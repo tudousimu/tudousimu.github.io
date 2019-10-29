@@ -109,10 +109,10 @@ Intro
   background-size: 101%;
   float: right;
   color: #ffffff;
-  font-size: 500%;
+  font-size: 4.2vw;
   line-height: 1.25em;
   width: 50%;
-  height: 10em;
+  height: 100%;
   margin: 0 0 0 0;
   padding: 2em 0.5em 0 .6em;
   -webkit-box-sizing: border-box;
@@ -124,7 +124,7 @@ Intro
       background: #293038 url(img/icon-card.svg) no-repeat left bottom;
       background-size: 49%;
       width: 66.666%;
-      height: 11em;
+      height: 100%;
       padding: 1em 0.5em 0 0.5em;
     }
   }
