@@ -486,6 +486,8 @@ Main
   }
   
 .main .overlay-right img {
+  position: relative;
+  top: 1.5em;
   text-align: center;
   padding-left: 19%;
 }
