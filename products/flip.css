@@ -1,0 +1,60 @@
+.site.flip {
+	background-color: #000;
+	transition: all 1s;
+}
+
+.site-content.flip {
+	color: #fff;
+	background-color: #101010;
+	transition: background-color 1s;
+}
+
+h3.flip {
+	color: #fff;
+	background-color: #000;
+}
+
+.show.flip {
+	display: none;
+}
+
+.hide, .hide-inline{
+	display: none;
+}
+
+.no-see {
+	visibility: hidden;
+}
+
+.hide.flip {
+	display: block;
+	transition: all 1s;
+}
+
+.hide-inline.flip {
+	display: inline;
+	transition: all 1s;
+}
+
+.see.flip {
+	visibility: hidden;
+}
+
+.no-see.flip {
+	visibility: visible;
+	transition: all 1s;
+}
+
+#monihead {
+	position: absolute;
+	z-index: 1;
+	top: -220px;
+	left: 350px;
+}
+
+#sayorip {
+	position: absolute;
+	z-index: 1;	
+	left: -300px;
+    top: -700px;
+}
