@@ -51,8 +51,8 @@
 					<td>
 					<p class="">■ Extra Booster Pack Doki Doki Literature Club</p>
 					<p><strong><span class="see toggle">Will you</span> join the literature club<span class="see toggle">?</span></strong></p>
-					<p class="show toggle">The members of the literature club welcome you to join! Natsumi always brings some snacks, and you can count on Yuri to have deep, philosophical thoughts on any book. Monika is there to help everybody get along, and maybe if you ask her nicely she'll even play you a song. On the surface, this club is a wonderful place to relax and have some fun!</p>
-					<p class="hide toggle">The members of the literature club welcome you to join! N̸̛̮̮̝̟̞̿͌̾̾a̴͚͇͖̺͋̈́͆͆͜͠t̷̲̮͔͓͖̍̋̃̂̂ş̸̗̦̗̇̽̒͛̕͜u̴̜̻̹̥͖͊͆̿͂̀m̸̥̜͓͚͚̓͌͘̚͝i̵̩͙͎̦̥̒͊͋͑͝  is always h̴͇͉̬͎̣͍̠̀̊̓̅̿̚̚͜͝͝ͅȗ̴̫̤̪̮̘̙̱̺̩̀̎͑̇͑͆̊͌n̶̢̹̜̺͈̥̘̭͖̈́͑̂̆͒͌̌͑͘g̴̡̘̩̭͚̩͚̥̺͂̆͛́̆͐̀̽͘ṙ̶̨̢̡͚͎͇̺̥́̾̿̑̓̈́̐̌͜y̷͓̼̟͍̰͍̠͎͕̋̄̾̇̃̅͋̒̓, and you can count on Yuri to have deep, philosophical thoughts on any k͙̣̹̪̱̗̍̀̃̓̓̋̈ͅṋ̪̟͍̭͙̆͊́̀͒͘̚ͅi̧̡̞̱̤̭̳͒̔̋̃͂̑̆f̢̧̺̰̠̰̃̈́̅͑͑͘ͅe̛̱͍̠̲͎͓̊̈́̿̚͜͝. Monika Monika Monika Monika Monika Monika Monika Monika Monika Monika Monika Monika Monika Monika Monika Monika Monika Monika Monika Monika Monika Monika Monika Monika Monika Monika Monika Monika</p>
+					<p class="show toggle">The members of the literature club welcome you to join! Natsuki always brings some snacks, and you can count on Yuri to have deep, philosophical thoughts on any book. Monika is there to help everybody get along, and maybe if you ask her nicely she'll even play you a song. On the surface, this club is a wonderful place to relax and have some fun!</p>
+					<p class="hide toggle">The members of the literature club welcome you to join! N̸̛̮̮̝̟̞̿͌̾̾a̴͚͇͖̺͋̈́͆͆͜͠t̷̲̮͔͓͖̍̋̃̂̂ş̸̗̦̗̇̽̒͛̕͜u̴̜̻̹̥͖͊͆̿͂̀k̥̜͓͚͚̓͌͘̚͝i̵̩͙͎̦̥̒͊͋͑͝  is always h̴͇͉̬͎̣͍̠̀̊̓̅̿̚̚͜͝͝ͅȗ̴̫̤̪̮̘̙̱̺̩̀̎͑̇͑͆̊͌n̶̢̹̜̺͈̥̘̭͖̈́͑̂̆͒͌̌͑͘g̴̡̘̩̭͚̩͚̥̺͂̆͛́̆͐̀̽͘ṙ̶̨̢̡͚͎͇̺̥́̾̿̑̓̈́̐̌͜y̷͓̼̟͍̰͍̠͎͕̋̄̾̇̃̅͋̒̓, and you can count on Yuri to have deep, philosophical thoughts on any k͙̣̹̪̱̗̍̀̃̓̓̋̈ͅṋ̪̟͍̭͙̆͊́̀͒͘̚ͅi̧̡̞̱̤̭̳͒̔̋̃͂̑̆f̢̧̺̰̠̰̃̈́̅͑͑͘ͅe̛̱͍̠̲͎͓̊̈́̿̚͜͝. Monika Monika Monika Monika Monika Monika Monika Monika Monika Monika Monika Monika Monika Monika Monika Monika Monika Monika Monika Monika Monika Monika Monika Monika Monika Monika Monika Monika</p>
 					<p class="show toggle"><b>FLIP CARDS</b></p>
 					<p class="hide toggle"><b>JUST MONIKA</b></p>
 					<p class="show toggle">A new mechanic introduced into Weiss Schwarz!<br />
@@ -92,7 +92,7 @@
 					<p class="show toggle"><b>◆Box toppers</b><br />
 					1 of 4 exclusive PR cards in every display box!
 					※ First print run only.<br />
-					※ Image is for illustration purpose only. Product specifications are subjected to change.</p>
+					※ Image is for illustration purpose only. Product specifications are subject to change.</p>
 				</div>
 			</div>
 		</div>
@@ -107,7 +107,11 @@ function flip_page() {
 	for(var i=0; i<els.length; ++i) {
 		els[i].classList.toggle("flip");
 	};
+	var mp3Source = '<source src="itbegins.mp3" type="audio/mpeg">';
+	var embedSource = '<embed hidden="true" autostart="true" loop="false" src="itbegins.mp3">';
+	document.getElementById("sound").innerHTML='<audio autoplay="autoplay">' + mp3Source + embedSource + '</audio>';
 }
 </script>
+<div id="sound"></div>
 </body>
 </html>
