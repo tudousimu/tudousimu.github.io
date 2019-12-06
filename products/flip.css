@@ -1,17 +1,17 @@
 .site.flip {
-	background-color: #000;
+	background-color: #101010;
 	transition: all 1s;
 }
 
 .site-content.flip {
 	color: #fff;
-	background-color: #101010;
-	transition: background-color 1s;
+	background-color: #000;
 }
 
 h3.flip {
 	color: #fff;
-	background-color: #000;
+	background-color: #101010;
+	transition: background-color 1s;
 }
 
 .show.flip {
