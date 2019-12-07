@@ -12,6 +12,7 @@ h3.flip {
 	color: #fff;
 	background-color: #101010;
 	transition: background-color 1s;
+	width: 9999px;
 }
 
 .show.flip {
@@ -57,4 +58,15 @@ h3.flip {
 	z-index: 1;	
 	left: -300px;
     top: -700px;
+}
+
+.scare.flip:hover:after {
+	content: url(img/jumpscare.png);
+	display: block;
+	overflow: visible;
+	position: absolute;
+	top: -200px;
+	left: -100px;
+	z-index: 1;
+	pointer-events: none;
 }
