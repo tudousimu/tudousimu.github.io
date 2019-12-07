@@ -60,6 +60,11 @@ h3.flip {
     top: -700px;
 }
 
+.scare.flip {
+	z-index: 2;
+	position: relative;
+}
+
 .scare.flip:hover:after {
 	content: url(img/jumpscare.png);
 	display: block;
