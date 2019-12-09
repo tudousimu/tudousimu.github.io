@@ -33,9 +33,9 @@
 	
 	But good thinking! You earned a pat on the back for being a true DDLC veteran.
 	
-	There iiiiiiis a small secret, but it shouldn't be too hard to discover. You'll know it when you see it.
+	There iiiiiiis a small secret, and you'll have to figure out how to find it. Something on this page is unlike the others.
 	
-	Sometimes you gotta think outside the box, you know? And by outside I mean inside.
+	Whatever it is, I'm sure it'll make your heart go "Doki Doki". Enjoy!
 -->
 <head>
 <meta charset="utf-8">
@@ -64,6 +64,7 @@
 	</div>
 </div>
 <div class="site-main">
+	<div id="scare" class="toggle"></div>
 	<div style="position: relative; width: 0; height: 0"><img class="hide toggle" src="img/sayorip.png" id="sayorip"></div>
 	<div class="site-content toggle">
 		<div class="site-content-inner">
@@ -82,7 +83,7 @@
 					<tbody>
 					<tr>
 					<td>
-					<p><span class="scare toggle">■</span> Extra Booster Pack Doki Doki Literature Club</p>
+					<p><span class="scare toggle" oncontextmenu="jumpscare(); return false;">■ Extra Booster Pack Doki Doki Literature Club</span></p>
 					<p><strong><span class="see toggle">Will you</span> join the literature club<span class="see toggle">?</span></strong></p>
 					<p class="show toggle">The members of the literature club welcome you to join! Natsuki always brings some snacks, and you can count on Yuri to have deep, philosophical thoughts on any book. Monika is there to help everybody get along, and maybe if you ask her nicely she'll even play you a song. On the surface, this club is a wonderful place to relax and have some fun!</p>
 					<p class="hide toggle">The members of the literature club welcome you to join! Natsuki is always h̴͇͉̬͎̣͍̠̀̊̓̅̿̚̚͜͝͝ͅȗ̴̫̤̪̮̘̙̱̺̩̀̎͑̇͑͆̊͌n̶̢̹̜̺͈̥̘̭͖̈́͑̂̆͒͌̌͑͘g̴̡̘̩̭͚̩͚̥̺͂̆͛́̆͐̀̽͘ṙ̶̨̢̡͚͎͇̺̥́̾̿̑̓̈́̐̌͜y̷͓̼̟͍̰͍̠͎͕̋̄̾̇̃̅͋̒̓, and you can count on Yuri to have deep, philosophical thoughts on any k͙̣̹̪̱̗̍̀̃̓̓̋̈ͅṋ̪̟͍̭͙̆͊́̀͒͘̚ͅi̧̡̞̱̤̭̳͒̔̋̃͂̑̆f̢̧̺̰̠̰̃̈́̅͑͑͘ͅe̛̱͍̠̲͎͓̊̈́̿̚͜͝. Monika Monika Monika Monika Monika Monika Monika Monika Monika Monika Monika Monika Monika Monika Monika Monika Monika Monika Monika Monika Monika Monika Monika Monika Monika</p>
@@ -136,6 +137,7 @@
 <div style="position: relative; width: 0; height: 0"><img class="hide toggle" src="img/monihead.png" id="monihead"></div>
 </div>
 <script>
+
 function flip_page() {
 	var els = document.getElementsByClassName("toggle");
 	for(var i=0; i<els.length; ++i) {
@@ -150,6 +152,18 @@ function flip_page() {
 		sfxAudio.pause();
 		sfxAudio.currentTime = 0;
 	}
+}
+
+function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+async function jumpscare() {
+	await sleep(2000);
+	var m = document.querySelector("#scare");
+	m.style.display = "block";
+	await sleep(2000);
+	m.style.display = "none";
 }
 </script>
 <audio class = "toggle" id = "sfx"><source src="itbegins.mp3" type="audio/mpeg"><embed hidden="true" loop="false" src="itbegins.mp3"></audio>

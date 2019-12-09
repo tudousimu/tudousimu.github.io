@@ -60,18 +60,17 @@ h3.flip {
     top: -700px;
 }
 
-.scare.flip {
+#scare.flip {
 	z-index: 2;
-	position: relative;
+	position: fixed;
+	display: none;
 }
 
-.scare.flip:hover:after {
+#scare.flip:after {
 	content: url(img/jumpscare.png);
 	display: block;
 	overflow: visible;
 	position: absolute;
-	top: -200px;
-	left: -100px;
 	z-index: 1;
 	pointer-events: none;
 }
