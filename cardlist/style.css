@@ -1,0 +1,102 @@
+.card, .flip-card{
+	height: 400px;
+	text-align: center;
+	margin: 0 0 1em;
+}
+
+.card img, .flip-card img {
+	width: 265px;
+	height: auto;
+}
+
+.desc {
+	padding: 1px;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.responsive {
+	min-width: 275px;
+	width: 25%;
+	float: left;
+}
+
+@media only screen and (max-width: 1115px) {
+	.responsive {
+		width: 33.333%;
+	}
+}
+
+@media only screen and (max-width: 840px) {
+	.responsive {
+		width: 50%;
+	}
+}
+
+@media only screen and (max-width: 565px) {
+	.responsive {
+		width: 100%;
+	}
+}
+
+body {
+	font-family: Open Sans;
+	background-color: #eeeef1;
+}
+
+.gallery, .site-main {
+	max-width: 1200px;
+	margin: 0 auto;
+	background-color: #fff;
+}
+
+h3 {
+    font-size: 12px;
+    font-size: 1.2rem;
+    line-height: 1;
+    padding: .75em;
+    color: #353a3f;
+    background-color: #e0e0e5;
+    margin-top: 8px;
+    clear: both;
+    -webkit-background-size: 60px 60px;
+    background-size: 60px 60px
+}
+
+h2 {
+    line-height: 1;
+    font-size: 14px;
+    font-size: 1.4rem;
+    padding: .75em;
+    padding-left: 2.2em;
+    border-bottom: #28a3d9 2px solid;
+    vertical-align: middle;
+    position: relative;
+    margin: -8px 0 8px 0;
+}
+
+li {
+	padding-left: 1em;
+}
+
+p .left-float {
+	width: 265px;
+	float: left;
+	padding-right: 1em;
+}
+
+p .right-float {
+	width: 265px;
+	float: right;
+	padding-left: 1em;
+}
+
+.activeblock {
+	display: block;
+}
+
+.link, .content-text {
+	padding: 0 24px;
+}

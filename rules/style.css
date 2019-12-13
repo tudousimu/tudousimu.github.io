@@ -1,0 +1,47 @@
+body {
+	font-family: Open Sans;
+	background-color: #eeeef1;
+}
+
+.site-main {
+	max-width: 1200px;
+	margin: 0 auto;
+	background-color: #fff;
+}
+
+h3 {
+    font-size: 12px;
+    font-size: 1.2rem;
+    line-height: 1;
+    padding: .75em;
+    color: #353a3f;
+    background-color: #e0e0e5;
+    margin-top: 8px;
+    clear: both;
+    -webkit-background-size: 60px 60px;
+    background-size: 60px 60px
+}
+
+h2 {
+    line-height: 1;
+    font-size: 14px;
+    font-size: 1.4rem;
+    padding: .75em;
+    padding-left: 2.2em;
+    border-bottom: #28a3d9 2px solid;
+    vertical-align: middle;
+    position: relative;
+    margin: -8px 0 8px 0;
+}
+
+.link, .rules-text {
+	padding-left: 24px;
+}
+
+.sub1 {
+	margin-left: 2em;
+}
+
+.sub2 {
+	margin-left: 4em;
+}
