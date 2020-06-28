@@ -55,7 +55,7 @@
             : document.location.href;
 	var pattern = /(?<=EN-)[a-z0-9]+(?=-)/i;
 	var result = pattern.exec(currentPage);
-	var targetButton = document.getElementsByClassName(result[0]);
+	var targetButton = document.getElementsByClassName(result[0])[0];
 	if (targetButton !== null)
 	{
 		targetButton.classList.toggle("active");
