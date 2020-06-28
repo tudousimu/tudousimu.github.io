@@ -7,9 +7,7 @@
 <script>
 	var iframe = document.getElementsByName("leftside")[0];
 	iframe.onload = function() {
-		var currentPage = (window.location != window.parent.location)
-				? document.referrer
-				: document.location.href;
+		var currentPage = window.location;
 		var pattern = /(?<=EN-)[a-z0-9]+(?=-)/i;
 		var result = pattern.exec(currentPage);
 		if (result !== null) {
