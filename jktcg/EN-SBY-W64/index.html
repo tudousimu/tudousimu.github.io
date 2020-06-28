@@ -3,3 +3,33 @@
 	<iframe src="../MenuLeftEN.html" name="leftside" width = "10%" height = "100%" style="box-sizing: border-box; border: none; border-right: 6px solid gray;" referrerpolicy="same-origin"></iframe>
 	<iframe src="EN-SBY-W64.html" name="rightside" width = "90%" height = "100%" style="box-sizing: border-box; border:none; float: right;" referrerpolicy="same-origin"></iframe>
 </body>
+
+<script>
+	var iframe = document.getElementsByName("leftside")[0];
+	iframe.onload = function() {
+		var currentPage = (window.location != window.parent.location)
+				? document.referrer
+				: document.location.href;
+		var pattern = /(?<=EN-)[a-z0-9]+(?=-)/i;
+		var result = pattern.exec(currentPage);
+		if (result !== null) {
+			var targetButton = iframe.contentWindow.document.getElementsByClassName(result[0])[0];
+			if (targetButton !== null)
+			{
+				targetButton.classList.toggle("active");
+				var content = targetButton.nextElementSibling;
+				if (content.style.display === "block") 
+				{ 
+					content.style.display = "none"; 
+				} 
+				else 
+				{ 
+					content.style.display = "block"; 
+				}
+				targetButton.scrollIntoView({
+					behavior: "smooth"
+				});
+			}
+		}
+	}
+</script>

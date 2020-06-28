@@ -49,27 +49,3 @@
 			}); 
 	} 
 </script>
-<script>
-	var currentPage = (window.location != window.parent.location)
-            ? document.referrer
-            : document.location.href;
-	var pattern = /(?<=EN-)[a-z0-9]+(?=-)/i;
-	var result = pattern.exec(currentPage);
-	var targetButton = document.getElementsByClassName(result[0])[0];
-	if (targetButton !== null)
-	{
-		targetButton.classList.toggle("active");
-		var content = targetButton.nextElementSibling;
-		if (content.style.display === "block") 
-		{ 
-			content.style.display = "none"; 
-		} 
-		else 
-		{ 
-			content.style.display = "block"; 
-		}
-		targetButton.scrollIntoView({
-			behavior: "smooth"
-		});
-	}
-</script>
