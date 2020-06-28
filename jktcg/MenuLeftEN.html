@@ -20,7 +20,7 @@
 <!-- 008	-->	<br>													
 <!-- 289	-->	<br>	<hr>
 <!-- 119	-->			<button class="collapsible" class="FJM"><br>Fujimi Fantasia Bunko<br><br></button><div class="content">
-<!-- 120	-->			<a href="EN-FJM-W65.html" target="_parent"><button class="button"><br>Fujimi Fantasia Bunko<br><br></button></a>											
+<!-- 120	-->			<a href="EN-FJM-W65.html/index.html" target="_parent"><button class="button"><br>Fujimi Fantasia Bunko<br><br></button></a>											
 <!-- 121	-->			</div>
 				<br>
 <!-- 119	-->			<button class="collapsible" class="SBY"><br>Aobuta<br><br></button><div class="content">
@@ -55,7 +55,7 @@
             : document.location.href;
 	var pattern = /(?<=EN-)[a-z0-9]+(?=-)/i;
 	var result = pattern.exec(currentPage);
-	var targetButton = document.getElementByClassName(result[0]);
+	var targetButton = document.getElementsByClassName(result[0]);
 	if (targetButton !== null)
 	{
 		targetButton.classList.toggle("active");
