@@ -13,7 +13,7 @@
 		if (result !== null) {
 			var idocument = (iframe.contentWindow || iframe.contentDocument);
 			if (idocument.document)idocument = idocument.document;
-			var targetButton = idocument.getElementsByClassName(result[0])[0];
+			var targetButton = idocument.getElementsByClassName(result)[0];
 			if (targetButton !== null)
 			{
 				targetButton.classList.toggle("active");
