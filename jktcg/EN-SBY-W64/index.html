@@ -11,7 +11,9 @@
 		var pattern = /(?<=EN-)[a-z0-9]+(?=-)/i;
 		var result = pattern.exec(currentPage);
 		if (result !== null) {
-			var targetButton = iframe.contentWindow.document.getElementsByClassName(result[0])[0];
+			var idocument = (iframe.contentWindow || iframe.contentDocument);
+			if (idocument.document)idocument = idocument.document;
+			var targetButton = idocument.getElementsByClassName(result[0])[0];
 			if (targetButton !== null)
 			{
 				targetButton.classList.toggle("active");
