@@ -1,4 +1,3 @@
-
 <!-- Master Sort	-->	<title>JKTCG</title>											
 <!-- 001	-->														
 <!-- 002	-->			<meta name="description" content="Your most reliable source for English Weiss Schwarz Singles Prices! Check out our Facebook & Twitter for News and Updates!">											
@@ -13,46 +12,21 @@
 							.buttonmain {text-align:center;} .buttonmain:hover {background-color: #999;}
 							.buttonp {text-align: left;color: black;} 
 							.buttonp:hover {background-color: #fff;cursor:default;}
-						</style>											
+						</style>
 <!-- 004	-->	<body style="margin: 0px;">
 <!-- 005	-->			<center>											
-<!-- 006	-->			<a href="homepage.html" target="rightside"><h1>JKTCG</h1></a>											
+<!-- 006	-->			<a href="homepage.html" target="_parent"><h1>JKTCG</h1></a>											
 <!-- 007	-->			Your most reliable source for English Weiss Schwarz Singles Prices!											
 <!-- 008	-->	<br>													
-<!-- 009	-->	<br>	<hr>	
-<!-- 119	-->			<button class="collapsible"><br>Fujimi Fantasia Bunko<br><br></button><div class="content">
-<!-- 120	-->			<a href="EN-FJM-W65.html" target="rightside"><button class="button"><br>Fujimi Fantasia Bunko<br><br></button></a>											
+<!-- 289	-->	<br>	<hr>
+<!-- 119	-->			<button class="collapsible" class="FJM"><br>Fujimi Fantasia Bunko<br><br></button><div class="content">
+<!-- 120	-->			<a href="EN-FJM-W65.html" target="_parent"><button class="button"><br>Fujimi Fantasia Bunko<br><br></button></a>											
 <!-- 121	-->			</div>
-<!-- 289	-->	<br>	<hr>
-<!-- 119	-->			<button class="button buttonp"><br>PLACEHOLDER<br><br></button>
-<!-- 119	-->			<button class="button buttonp"><br>PLACEHOLDER<br><br></button>
-<!-- 119	-->			<button class="button buttonp"><br>PLACEHOLDER<br><br></button>
-<!-- 119	-->			<button class="button buttonp"><br>PLACEHOLDER<br><br></button>
-<!-- 119	-->			<button class="button buttonp"><br>PLACEHOLDER<br><br></button>
-<!-- 119	-->			<button class="button buttonp"><br>PLACEHOLDER<br><br></button>
-<!-- 119	-->			<button class="button buttonp"><br>PLACEHOLDER<br><br></button>
-<!-- 119	-->			<button class="button buttonp"><br>PLACEHOLDER<br><br></button>
-<!-- 119	-->			<button class="button buttonp"><br>PLACEHOLDER<br><br></button>
-<!-- 119	-->			<button class="button buttonp"><br>PLACEHOLDER<br><br></button>
-<!-- 119	-->			<button class="button buttonp"><br>PLACEHOLDER<br><br></button>
-<!-- 119	-->			<button class="button buttonp"><br>PLACEHOLDER<br><br></button>
-<!-- 119	-->			<button class="button buttonp"><br>PLACEHOLDER<br><br></button>
-<!-- 119	-->			<button class="button buttonp"><br>PLACEHOLDER<br><br></button>
-<!-- 119	-->			<button class="button buttonp"><br>PLACEHOLDER<br><br></button>
-<!-- 119	-->			<button class="button buttonp"><br>PLACEHOLDER<br><br></button>
-<!-- 119	-->			<button class="button buttonp"><br>PLACEHOLDER<br><br></button>
-<!-- 119	-->			<button class="button buttonp"><br>PLACEHOLDER<br><br></button>
-<!-- 289	-->	<br>	<hr>
-<!-- 119	-->			<button class="collapsible" id="EN-SBY-W64"><br>Aobuta<br><br></button><div class="content">
+				<br>
+<!-- 119	-->			<button class="collapsible" class="SBY"><br>Aobuta<br><br></button><div class="content">
 <!-- 120	-->			<a href="EN-SBY-W64/index.html" target="_parent"><button class="button"><br>Seishun Buta Yarou wa Bunny Girl Senpai no Yume wo Minai<br><br></button></a>											
 <!-- 121	-->			</div>
 				<br>	<hr>
-<!-- 119	-->			<button class="button buttonp"><br>PLACEHOLDER<br><br></button>
-<!-- 119	-->			<button class="button buttonp"><br>PLACEHOLDER<br><br></button>
-<!-- 119	-->			<button class="button buttonp"><br>PLACEHOLDER<br><br></button>
-<!-- 119	-->			<button class="button buttonp"><br>PLACEHOLDER<br><br></button>
-<!-- 119	-->			<button class="button buttonp"><br>PLACEHOLDER<br><br></button>
-<!-- 119	-->			<button class="button buttonp"><br>PLACEHOLDER<br><br></button>
 				<br>
 				</body>
 <script>
@@ -79,9 +53,9 @@
 	var currentPage = (window.location != window.parent.location)
             ? document.referrer
             : document.location.href;
-	var pattern = /EN-[a-z0-9]+-[a-z][0-9]+/i;
+	var pattern = /(?<=EN-)[a-z0-9]+(?=-)/i;
 	var result = pattern.exec(currentPage);
-	var targetButton = document.getElementById(result[0]);
+	var targetButton = document.getElementByClassName(result[0]);
 	if (targetButton !== null)
 	{
 		targetButton.classList.toggle("active");
