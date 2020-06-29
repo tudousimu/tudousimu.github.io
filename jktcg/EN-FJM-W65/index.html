@@ -16,16 +16,9 @@
 			var targetButton = idocument.getElementsByClassName(result)[0];
 			if (targetButton !== null)
 			{
-				targetButton.classList.toggle("active");
+				targetButton.classList.add("active");
 				var content = targetButton.nextElementSibling;
-				if (content.style.display === "block") 
-				{ 
-					content.style.display = "none"; 
-				} 
-				else 
-				{ 
-					content.style.display = "block"; 
-				}
+				content.style.display = "block"; 
 				targetButton.scrollIntoView({
 					behavior: "smooth"
 				});
