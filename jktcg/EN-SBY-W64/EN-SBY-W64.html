@@ -1,8 +1,8 @@
 
 <!-- Master Sort	-->	<title>JKTCG</title><body style="background-color:white;color:black" link="blue" vlink="blue"><style>table, th, td {table-layout: fixed; border: 1px solid black;border-collapse: collapse; max-width:1065px;}h1 {font-size: 250%;}</style>																													
 <!-- 001	-->	<h1><ins>	(EN) SAMPLE PAGE Rascal Does Not Dream of Bunny Girl Senpai	</ins></h1>																											
-<!-- 002	-->		Last Updated:	6/20/2020 9:29:07					Pacific Time Zone (US & Canada)																						
-<!-- 003	-->																														
+<!-- 002	-->		Last Updated:	6/20/2020 9:29:07					Pacific Time Zone (US & Canada)		<br/>													
+<!-- 003	-->	<a href="#" id="imageToggle">	Toggle Image Quality (HQ)		</a>															
 <!-- 004	-->	<h1>	SEC - Secret (Signature)	</h1>																					<!-- 1 per 2 cases, eats SP, R slot -->						
 <!-- 005	-->	<table width=100% height=315><tr>																													
 <!-- 006	-->	<td align=center valign=top>	SBY/W64-E053SEC	<a href="	SBY_W64_E053SEC	.jpg" target="rightside">	<br><img src="	SBY_W64_E053SEC	.jpg" width="100%">	</a>	<br>Available:<b>	0	<!--		-->	<font color="red"><b>			</b></font>	</b><br>Price:<b>		$350.00	</strike>	</b><br>	Irreplaceable Existence, Mai Sakurajima	<br><br></td>					
@@ -14,3 +14,23 @@
 <!-- 012	-->	<td align=center valign=top>																													
 <!-- 013	-->	<td align=center valign=top>																													
 <!-- 014	-->	</tr></table>
+
+<script>
+document.getElementById("imageToggle").addEventListener("click", function(event){
+	event.preventDefault();
+	var images = document.getElementsByTagName("img");
+	for (var i = 0; i < images.length; i++) {
+		if (images[i].src.includes("LQ"))
+		{
+			images[i].src = images[i].src.substr(0, images[i].src.lastIndexOf('_')) + images[i].src.substr(images[i].src.lastIndexOf('.'));
+			document.getElementById("imageToggle").innerText = "Toggle Image Quality (LQ)";
+		}
+		else
+		{
+			images[i].src = images[i].src.substr(0, images[i].src.lastIndexOf('.')) + "_LQ" + images[i].src.substr(images[i].src.lastIndexOf('.'));
+			document.getElementById("imageToggle").innerText = "Toggle Image Quality (HQ)";
+		}
+	}
+	
+});
+</script>
