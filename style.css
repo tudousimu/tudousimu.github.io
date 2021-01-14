@@ -250,6 +250,12 @@ Intro
       padding: 0;
     }
   }
+  
+  .intro .blurb .author {
+	position: relative;
+	top: 1em;
+    width: 100%;
+  }
 /* 
 ==========================================================================
 Main
