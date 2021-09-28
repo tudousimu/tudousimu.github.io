@@ -389,7 +389,7 @@ Main
   bottom: 1em;
   width: 20%;
   padding: 0;
-  margin-top: -45em;
+  margin-top: -20em;
   margin-left: 10%;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -721,7 +721,7 @@ Main
 
 .main .passions {
   position:relative;
-  top: -30em;
+  top: -2.4em;
   background: lightskyblue;
   z-index: 2;
   width: 60%;
@@ -753,8 +753,7 @@ Main
   z-index: 3;
   font-size: 300%;
   line-height: 2em;
-  margin-bottom: 2em;
-  text-align: right;
+  padding-left: 1em;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
